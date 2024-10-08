@@ -7,7 +7,9 @@ import Button from "./(components)/Button";
 import { useState } from "react";
 import axios from "axios";
 import { evaluate } from "mathjs";
+import nextConfig from "../../next.config.mjs";
 
+const BASE_PATH = nextConfig.basePath || "";
 const Home = () => {
     const buttons = [
         "AC",
